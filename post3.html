@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>CS117</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <img src="images/Website Design.png" class="logo">
+        <a href="home.html" class="buttona" id="btnhm" style="color: #8dbcdb">HOME</a><br>
+        <a href="#notif" class="buttonb" id="btnhm">NOTIFICATION</a><br>
+        <a href="#message" class="buttonc" id="btnhm">MESSAGES</a><br>
+        <a href="#abt" class="buttond" id="btnhm">ABOUT</a><br>
+
+        <div class="prof">
+            <a href="prof.html"><img src="images/user2.png"></a>
+            <p>EJ Ramos</p>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="feed" id="feed">
+
+        <div class="status">
+            <div class="pic">
+                <img src="images/user1.png" class="dp">
+            </div>
+            <div class="text">
+                <h1>Admin</h1>
+                <h2>@administrator98</h2>
+                <h3>Welcome to the Website!</h3>
+                <p>This website was created for the cmpsc 117 activity/final project. This is a concept of a social media targetted for a smaller community.</p>
+            </div>
+            <div class="arrows">
+                <h1>35</h1>
+                <img src="images/arrup.png" class="up">
+                <img src="images/arrdown.png" class="dwn">
+            </div>
+
+            <div class="comments">
+                <h3>Comments</h3>
+                <p>no comments so far</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="notifs">
+        <div class="notifcont">
+            <p>No new notifications</p>
+            <img src="images/arrside.png" class="arrsd">
+        </div>
+    </div>
+
+    <div class="messages">
+        <div class="msg">
+            <p>No new messages</p>
+            <img src="images/arrside.png" class="arrsdm">
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="abt">
+            <h1>About this website</h1>
+            <img src="images/X.png" class="arrsda">
+            <img src="images/site.png" class="site">
+            <p>This website is a concept of a social media focusing on a smaller community. Some features does not exist like search bar, actual posting of status, logging in, database, etc.</p>
+            <br>
+            <p>Website by Erwin John A. Ramos</p>
+        </div>
+    </div>
+
+    <script>
+        <!--notif-->
+        document.querySelector(".buttonb").addEventListener("click", function ()
+        {document.querySelector(".notifs").style.display = "flex"; })
+
+        document.querySelector(".arrsd").addEventListener("click", function ()
+        {document.querySelector(".notifs").style.display = "none"; })
+
+        <!--messages-->
+        document.querySelector(".buttonc").addEventListener("click", function ()
+        {document.querySelector(".messages").style.display = "flex"; })
+
+        document.querySelector(".arrsdm").addEventListener("click", function ()
+        {document.querySelector(".messages").style.display = "none"; })
+
+        <!--about-->
+        document.querySelector(".buttond").addEventListener("click", function ()
+        {document.querySelector(".about").style.display = "flex"; })
+
+        document.querySelector(".arrsda").addEventListener("click", function ()
+        {document.querySelector(".about").style.display = "none"; })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>CS117</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <img src="images/Website Design.png" class="logo">
+        <a href="home.html" class="buttona" id="btnhm" style="color: #8dbcdb">HOME</a><br>
+        <a href="#notif" class="buttonb" id="btnhm">NOTIFICATION</a><br>
+        <a href="#message" class="buttonc" id="btnhm">MESSAGES</a><br>
+        <a href="#abt" class="buttond" id="btnhm">ABOUT</a><br>
+
+        <div class="prof">
+            <a href="prof.html"><img src="images/user2.png"></a>
+            <p>EJ Ramos</p>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="feed" id="feed">
+
+        <div class="profile">
+            <img src="images/user1.png">
+            <h1>EJ RAMOS</h1>
+            <p class="edit">edit</p>
+            <h2>@hatred</h2>
+            <p>Following 0  Followers 43</p>
+        </div>
+
+        <div class="editpr">
+            <div class="editct">
+                <img src="images/user1.png">
+                <p>Change picture</p>
+                <input type="text" placeholder="EJ Ramos">
+                <input type="text" placeholder="@hatred">
+
+                <a href="#save" class="save">SAVE</a>
+                <a href="#cancel" class="cancel">CANCEL</a>
+            </div>
+        </div>
+
+        <h1 class="postline">POSTS</h1>
+        <a href="post1.html">
+        <div class="status">
+            <div class="pic">
+                <img src="images/user1.png" class="dp">
+            </div>
+            <div class="text">
+                <h1>EJ.Ramos</h1>
+                <h2>@hatred</h2>
+                <h3>Hello murvs</h3>
+                <p>U succ!!!</p>
+            </div>
+            <div class="arrows">
+                <h1>21</h1>
+                <img src="images/arrup.png" class="up">
+                <img src="images/arrdown.png" class="dwn">
+            </div>
+        </div>
+        </a>
+
+        <div class="btop">
+            <a href="#" class="top">BACK TO TOP</a>
+        </div>
+    </div>
+
+    <div class="notifs">
+        <div class="notifcont">
+            <p>No new notifications</p>
+            <img src="images/arrside.png" class="arrsd">
+        </div>
+    </div>
+
+    <div class="messages">
+        <div class="msg">
+            <p>No new messages</p>
+            <img src="images/arrside.png" class="arrsdm">
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="abt">
+            <h1>About this website</h1>
+            <img src="images/X.png" class="arrsda">
+            <img src="images/site.png" class="site">
+            <p>This website is a concept of a social media focusing on a smaller community. Some features does not exist like search bar, actual posting of status, logging in, database, etc.</p>
+            <br>
+            <p>Website by Erwin John A. Ramos</p>
+        </div>
+    </div>
+
+    <script>
+        <!--notif-->
+        document.querySelector(".buttonb").addEventListener("click", function ()
+        {document.querySelector(".notifs").style.display = "flex"; })
+
+        document.querySelector(".arrsd").addEventListener("click", function ()
+        {document.querySelector(".notifs").style.display = "none"; })
+
+        <!--messages-->
+        document.querySelector(".buttonc").addEventListener("click", function ()
+        {document.querySelector(".messages").style.display = "flex"; })
+
+        document.querySelector(".arrsdm").addEventListener("click", function ()
+        {document.querySelector(".messages").style.display = "none"; })
+
+        <!--about-->
+        document.querySelector(".buttond").addEventListener("click", function ()
+        {document.querySelector(".about").style.display = "flex"; })
+
+        document.querySelector(".arrsda").addEventListener("click", function ()
+        {document.querySelector(".about").style.display = "none"; })
+
+        <!--prof-->
+        document.querySelector(".edit").addEventListener("click", function ()
+        {document.querySelector(".editpr").style.display = "flex"; })
+
+        <!--savecancel-->
+        document.querySelector(".save").addEventListener("click", function ()
+        {document.querySelector(".editpr").style.display = "none"; })
+
+        document.querySelector(".cancel").addEventListener("click", function ()
+        {document.querySelector(".editpr").style.display = "none"; })
+    </script>
+</body>
+</html>
